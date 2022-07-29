@@ -9,38 +9,38 @@
         <div class = "Calculator">
             <div class = "rowOne">
                 <div>
-                    <textarea id="inputNumbers" rows="1" cols="10"></textarea>
+                    <input type="text" id="inputNumbers" value="">
                 </div>
                 <div>
-                    <textarea id="answer" rows="1" cols="10"></textarea>
+                    <input type="text" id="answer" rows="1" cols="10">
                 </div>
             </div>
             <div class = "rowTwo">
-                <button type="button" onclick="">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button">/</button>
+                <button type="button" onclick="displayNums(7)">7</button>
+                <button type="button" onclick="displayNums(8)">8</button>
+                <button type="button" onclick="displayNums(9)">9</button>
+                <button type="button" onclick="displayNums(/)">/</button>
             </div>
             <div class = "rowThree">
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">*</button>
+                <button type="button" onclick="displayNums(4)">4</button>
+                <button type="button" onclick="displayNums(5)">5</button>
+                <button type="button" onclick="displayNums(6)">6</button>
+                <button type="button" onclick="displayNums(*)">*</button>
             </div>
             <div class = "rowFour">
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">+</button>
+                <button type="button" onclick="displayNums(1)">1</button>
+                <button type="button" onclick="displayNums(2)">2</button>
+                <button type="button" onclick="displayNums(3)">3</button>
+                <button type="button" onclick="displayNums(+)">+</button>
             </div>
             <div class = "rowFive">
-                <button type="button">.</button>
-                <button type="button">0</button>
-                <button type="button">=</button>
-                <button type="button">-</button>
+                <button type="button" onclick="displayNums(.)">.</button>
+                <button type="button" onclick="displayNums(0)">0</button>
+                <button type="button" onclick="displayNums(=)">=</button>
+                <button type="button" onclick="displayNums(-)">-</button>
             </div>
             <div class = "rowFour">
-                <button type="button">Clear</button>
+                <button type="button" onclick="clearAll()">Clear</button>
             </div>
         </div>
     </body>

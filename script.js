@@ -1,3 +1,11 @@
+let problemText = "";
+let solutionText = "";
+let num1 = 0;
+let num2 = 0;
+let operator = "";
+
+
+
 function addition(a,b) {
     return a + b;
 };
@@ -24,4 +32,18 @@ function operate(operator,a,b) {
     } else if (operator == "divisor") {
         return division(a,b)
     }else return "operator not found"
+};
+
+function clearAll() {
+    problemText = "";
+    solutionText = "";
+     num1 = 0;
+     num2 = 0;
+    operator = "";
+};
+
+
+function displayNums(a) {
+    problemText += a;
+    return problemText;
 };
