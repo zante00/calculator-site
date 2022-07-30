@@ -4,7 +4,9 @@ let num1 = 0;
 let num2 = 0;
 let operator = "";
 
+const topNum = document.querySelector('#inputNumbers');
 
+topNum.value = problemText;
 
 function addition(a,b) {
     return a + b;
@@ -45,5 +47,6 @@ function clearAll() {
 
 function displayNums(a) {
     problemText += a;
+    topNum.value = problemText;
     return problemText;
 };
